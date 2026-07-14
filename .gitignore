@@ -1,2 +1,6 @@
 # Ejecutables
 *.exe
+
+
+# Archivos
+*.py
