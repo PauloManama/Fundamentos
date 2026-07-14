@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     int a, b, m;
     cout << "Ingrese el primer numero: ";
     cin >> a;
@@ -13,12 +14,17 @@ int main() {
     if (a <= 0 || b <= 0)
         cout << "Los numeros ingresados deben ser mayor a 0";
 
-    m = (a > b) ? a : b;
+    int mayor = (a > b) ? a : b;
 
-    for (int i = m; ; i++) {
-        if (i % a == 0 && i % b == 0) {
-            cout << "MCM = " << i;
+    for (int i = 1; i > 0; i++)
+    {
+        m = mayor * i;
+
+        if (m % a == 0 && m % b == 0)
+        {
+            cout << "MCM = " << m;
             break;
         }
     }
+    return 0;
 }
