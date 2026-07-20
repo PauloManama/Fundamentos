@@ -12,19 +12,26 @@ int main()
     cin >> b;
 
     if (a <= 0 || b <= 0)
+    {
         cout << "Los numeros ingresados deben ser mayor a 0";
+        return 0;
+    }
 
     int mayor = (a > b) ? a : b;
+    int menor = (a < b) ? a : b;
+    
+    bool bandera = false;
+    int mcm = mayor * menor;
 
-    for (int i = 1; i > 0; i++)
+    for (int i = 1; i <= menor; i++)
     {
         m = mayor * i;
 
-        if (m % a == 0 && m % b == 0)
+        if ((m % a == 0) && (m % b == 0) && (!bandera))
         {
-            cout << "MCM = " << m;
-            break;
+            mcm = m;
+            bandera = true;
         }
     }
-    return 0;
+    cout << "El MCM es: " << mcm << endl;
 }

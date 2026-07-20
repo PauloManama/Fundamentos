@@ -12,7 +12,10 @@ int main()
     cin >> b;
 
     if (a <= 0 || b <= 0)
+    {
         cout << "Los numeros ingresados deben ser mayor a 0";
+        return 0;
+    }
 
     int mayor = (a > b) ? a : b;
     int i = 1;
@@ -20,15 +23,8 @@ int main()
     do
     {
         m = mayor * i;
-
-        if (m % a == 0 && m % b == 0)
-        {
-            cout << "MCM = " << m;
-            break;
-        }
         i++;
 
-    } while (i > 0);
-
-    return 0;
+    } while ((m % a != 0 || m % b != 0));
+    cout << "MCM = " << m << endl;
 }
