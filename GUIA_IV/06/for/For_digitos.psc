@@ -13,7 +13,7 @@ Algoritmo For_digitos
     copia <- n
     digitos <- 0
 	
-    // contar los dígitos
+    // contar los digitos
     Para i <- 1 Hasta 20 Hacer
         Si copia <> 0 Entonces
             copia <- Trunc(copia / 10)
@@ -27,7 +27,7 @@ Algoritmo For_digitos
 	
     suma <- 0
 	
-    // sumar los dígitos
+    // sumar los digitos
     Para i <- 1 Hasta digitos Hacer
         digito <- n MOD 10
         suma <- suma + digito

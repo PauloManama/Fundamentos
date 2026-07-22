@@ -2,19 +2,20 @@
 using namespace std;
 
 int main() {
-    int n, suma = 0, digito, aux;
-
-    cout << "Ingresa un numero: ";
+    int n, c_cifras = 0;
+    
+    cout << "Ingrese un numero: " << endl;
     cin >> n;
 
-    aux = n;
     n = (n < 0) ? -n : n;
 
-    for (int i = 1; n != 0; n /= 10) {
-        digito = n % 10;
-        suma += digito;
-    }
-    cout << "La suma de los digitos del numero " << aux << " es " << suma << endl;
+    if (n == 0)
+        c_cifras = 1;
 
+    for ( ; n != 0; n /= 10) {
+        c_cifras++;
+    }
+
+    cout << "La cantidad de cifras en el numero es: " << c_cifras;
     return 0;
 }

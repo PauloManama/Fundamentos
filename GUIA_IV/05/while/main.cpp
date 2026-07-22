@@ -2,22 +2,22 @@
 using namespace std;
 
 int main() {
-    int n, suma = 0, digito, aux;
-
-    cout << "Ingresa un numero: ";
+    int n, c_cifras = 0;
+    
+    cout << "Ingrese un numero: " << endl;
     cin >> n;
 
-    aux = n;
     n = (n < 0) ? -n : n;
+
+    if (n == 0)
+        c_cifras = 1;
 
     while (n != 0)
     {
-        digito = n % 10;
-        suma += digito;
+        c_cifras++;
         n /= 10;
     }
-
-    cout << "La suma de los digitos del numero " << aux << " es " << suma << endl;
+    cout << "La cantidad de cifras en el numero es: " << c_cifras;
 
     return 0;
 }
