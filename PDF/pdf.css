@@ -1,0 +1,38 @@
+@page {
+    size: A4;
+    margin: 20mm;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+table.recuadro {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.recuadro td {
+    border: 1px solid black;
+    padding: 10px;
+    vertical-align: top;
+}
+
+table.recuadro td:first-child {
+    width: 80%;
+}
+
+table.recuadro td:last-child {
+    width: 20%;
+    text-align: center;
+}
+
+.salto-pagina {
+    page-break-after: always;
+}

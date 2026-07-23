@@ -10,13 +10,9 @@ Algoritmo Do_WHile_Pares
 		Si (i MOD 2 = 0) Entonces
 			pares  = pares + 1
 		FinSi
-		Si (num >= 0) Entonces
-			i = i + 1
-		SiNo
-			i = i -1
-		FinSi
+		i = i + 1
 
-	Hasta Que (num >= 0 Y i > num) O (num < 0 Y i < num)
+	Hasta Que (i > num)
 	
 	Escribir "Cantidad de numeros pares: ", pares
 FinAlgoritmo

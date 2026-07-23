@@ -7,20 +7,16 @@ int main()
     cout << "Ingrese un numero: ";
     cin >> num;
 
+    num = (num < 0) ? - num : num;
+
     int i = 0;
 
-    while ((num >= 0 && i <= num) || (num < 0 && i >= num))
+    while (i <= num)
     {
         if (i % 2 == 0) {
             pares++;
         }
-
-        if (num >= 0) {
-            i++;
-        }
-        else {
-            i--;
-        }
+        i++;
     }
     cout << "Cantidad de numeros pares: " << pares << endl;
     return 0;

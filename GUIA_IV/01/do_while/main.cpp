@@ -8,18 +8,13 @@ int main()
     cin >> num;
 
     int i = 0;
+    
     do {
         if (i % 2 == 0) {
             pares++;
         }
-
-        if (num >= 0) {
-            i++;
-        }
-        else {
-            i--;
-        }
-    } while ((num >= 0 && i <= num) || (num < 0 && i >= num));
+        i++;
+    } while (i <= num);
 
     cout << "Cantidad de numeros pares: " << pares << endl;
     return 0;

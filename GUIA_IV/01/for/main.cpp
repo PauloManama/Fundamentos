@@ -7,9 +7,9 @@ int main()
     cout << "Ingrese un numero: ";
     cin >> num;
 
-    int count = (num >= 0) ? 1 : -1;
+   num  = (num < 0) ? -num : num;
 
-    for (int i = 0; (count == 1) ? (i <= num) : (i >= num);i += count)
+    for (int i = 0; i <= num; i++)
     {
         if (i % 2 == 0)
             pares++;
