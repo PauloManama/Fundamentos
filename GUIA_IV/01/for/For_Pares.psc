@@ -5,9 +5,9 @@ Algoritmo For_Pares
 	
 	pares <- 0
 
-	Si (num < 0) {
+	Si (num < 0) 
 		num = - num
-	}
+	FinSi
 
 	Para i<-0 Hasta num Con Paso 1 Hacer
 		Si (i MOD 2 = 0) Entonces
