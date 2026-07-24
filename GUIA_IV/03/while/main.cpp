@@ -24,4 +24,6 @@ int main()
 
     cout << "La suma de cuadrados de los " << n << " primeros numeros naturales es: " << suma_cuadrado << endl;
     cout << "La suma de cubos de los " << n << " primeros numeros naturales es: " << suma_cubo << endl;
+
+    return 0;
 }

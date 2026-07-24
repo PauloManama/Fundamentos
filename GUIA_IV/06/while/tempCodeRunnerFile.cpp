@@ -1,1 +1,0 @@
-"La suma de los digitos del numero " << aux << " es " << suma

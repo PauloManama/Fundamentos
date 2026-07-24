@@ -19,5 +19,4 @@ Algoritmo While_digito
 	Fin Mientras
 	
 	Escribir "La suma de los digitos del numero " , aux , " es " , suma
-	
 FinAlgoritmo

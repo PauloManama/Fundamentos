@@ -22,4 +22,6 @@ int main() {
     else {
         cout << "El numero ingresado: " << n << " no es capicua";
     }
+
+    return 0;
 }

@@ -13,7 +13,7 @@ int main() {
     while (n != 0)
     {
         digito = n % 10;
-        suma += digito;
+        suma += digito; 
         n /= 10;
     }
 
